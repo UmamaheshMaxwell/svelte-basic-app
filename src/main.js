@@ -1,10 +1,14 @@
-import App from './App.svelte';
+import App from './App.svelte'
+import BindingText from './1.binding-text.svelte'
+import BindingHTML from './2.binding-html.svelte'
 
-const app = new App({
+ new App({
 	target: document.body,
 	props: {
 		name: 'Uma'
 	}
 });
 
-export default app;
+new BindingText({target:document.body})
+
+new BindingHTML({target: document.body})
